@@ -284,7 +284,7 @@ bool NMEA0183::Parse( void )
 
 //          Traverse the response list to find a mnemonic match
 
-       wxMRLNode *node = response_table.GetFirst();
+       auto *node = response_table.GetFirst();
 
        int comparison  = 0;
 
